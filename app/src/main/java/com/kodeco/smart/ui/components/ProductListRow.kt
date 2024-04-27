@@ -47,7 +47,6 @@ fun ProductListRow(
                 .fillMaxWidth()
                 .height(150.dp)
                 .background(Color.White),
-//            horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically,
         ) {
             Card(
@@ -73,8 +72,6 @@ fun ProductListRow(
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
                     fontSize = 12.sp,
-//                    modifier = Modifier
-//                        .width(150.dp),
                 )
 
                 Text(
@@ -82,19 +79,12 @@ fun ProductListRow(
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
                     fontSize = 12.sp,
-//                    modifier = Modifier
-//                        .width(150.dp),
                 )
 
                 if (isFavoritesFeatureEnabled) {
                     ProductFavoriteStar(product = product, onTap = onFavorite)
                 }
             }
-
-
-//            Spacer(modifier = Modifier.size(4.dp))
-
-
         }
     }
 }

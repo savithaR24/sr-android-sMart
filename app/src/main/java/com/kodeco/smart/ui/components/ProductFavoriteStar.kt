@@ -17,6 +17,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.kodeco.smart.R
 import com.kodeco.smart.models.Product
@@ -108,4 +109,13 @@ fun ProductFavoriteStar(
             )
         }
     }
+}
+
+@Preview
+@Composable
+fun ProductFavoriteStarPreview() {
+    ProductFavoriteStar(
+        product = sampleProduct,
+        onTap = {},
+    )
 }

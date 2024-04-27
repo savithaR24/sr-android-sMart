@@ -34,7 +34,6 @@ fun ProductDetail(
         modifier = modifier
             .fillMaxSize()
             .padding(10.dp),
-//        horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
         item {
