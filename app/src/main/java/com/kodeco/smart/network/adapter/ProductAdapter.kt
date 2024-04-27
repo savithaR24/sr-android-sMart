@@ -2,7 +2,6 @@ package com.kodeco.smart.network.adapter
 
 import com.kodeco.smart.models.Product
 import com.kodeco.smart.network.dto.ProductDto
-import com.kodeco.smart.ui.screens.list.ProductListViewModel
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.JsonQualifier
 import com.squareup.moshi.ToJson
@@ -35,6 +34,6 @@ class ProductAdapter {
                 price = product.productPrice,
                 category = product.productCategory,
                 description = product.productDescription,
-                )
+            )
         }
 }

@@ -26,7 +26,7 @@ class ProductRepositoryImpl(
     override val products: StateFlow<List<Product>> = _products.asStateFlow()
 
     init {
-        runBlocking() {
+        runBlocking {
             isLocalStorageEnabled = productPrefs.getLocalStorageEnabled().first()
             isFavoritesFeatureEnabled = productPrefs.getFavoritesFeatureEnabled().first()
         }

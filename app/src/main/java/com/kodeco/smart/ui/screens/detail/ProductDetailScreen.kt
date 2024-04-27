@@ -12,7 +12,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import com.kodeco.smart.ui.components.ProductDetail
 import com.kodeco.smart.ui.components.ProductError
@@ -34,8 +33,10 @@ fun ProductDetailScreen(
         topBar = {
             TopAppBar(
                 title = {
-                    Text(text = (detailsState.value as? ProductDetailState.Success)?.product?.productTitle.orEmpty(),
-                        fontSize = 13.sp)
+                    Text(
+                        text = (detailsState.value as? ProductDetailState.Success)?.product?.productTitle.orEmpty(),
+                        fontSize = 13.sp
+                    )
                 },
                 navigationIcon = {
                     IconButton(onClick = {

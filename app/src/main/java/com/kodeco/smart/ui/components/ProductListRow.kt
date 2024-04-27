@@ -10,11 +10,9 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -27,7 +25,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import com.kodeco.smart.models.Product
-import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
 @Composable
 fun ProductListRow(
@@ -70,8 +67,9 @@ fun ProductListRow(
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.Start,
 
-            ) {
-                Text(text = "Name: ${product.productTitle}",
+                ) {
+                Text(
+                    text = "Name: ${product.productTitle}",
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
                     fontSize = 12.sp,
@@ -79,7 +77,8 @@ fun ProductListRow(
 //                        .width(150.dp),
                 )
 
-                Text(text = "Category: ${product.productCategory}",
+                Text(
+                    text = "Category: ${product.productCategory}",
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
                     fontSize = 12.sp,
@@ -105,7 +104,7 @@ val sampleProduct = Product(
     productTitle = "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
     productCategory = "men's clothing",
     productDescription = "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-    productImageUrl =  "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    productImageUrl = "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
     productPrice = 109.95,
     isFavorite = false,
 )

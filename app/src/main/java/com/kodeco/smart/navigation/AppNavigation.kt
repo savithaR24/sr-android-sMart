@@ -6,6 +6,7 @@ enum class AppNavigation {
     ABOUT,
     SETTINGS,
 }
+
 sealed class NavigationItem(val route: String) {
     data object List : NavigationItem(AppNavigation.LIST.name)
     data object Details : NavigationItem(AppNavigation.DETAILS.name)
