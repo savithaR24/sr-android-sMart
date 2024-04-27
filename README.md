@@ -1,7 +1,8 @@
 # sr-android-sMart
 Shop Mart App (SMart)
 
-![smart](https://github.com/savithaR24/sr-android-sMart/assets/157411007/03600850-0fea-4b9f-b9bf-ecf81e230dcf)
+<img width="163" alt="Screenshot 2024-04-27 at 8 42 49 AM" src="https://github.com/savithaR24/sr-android-sMart/assets/157411007/cfb91962-c18e-4dd9-ae08-4876b6b0ab6e">
+
 
 
 Shop Mart App displays information about products available in the store. 
