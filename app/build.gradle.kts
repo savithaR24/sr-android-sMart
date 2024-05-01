@@ -63,6 +63,9 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 dependencies {
@@ -103,6 +106,10 @@ dependencies {
 
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+
+    testImplementation(libs.ui.test.junit4)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.mockk)
 }
 
 kapt {

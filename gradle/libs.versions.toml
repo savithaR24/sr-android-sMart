@@ -25,6 +25,8 @@ navigation="2.7.7"
 espresso="3.5.1"
 room="2.6.1"
 prefs="1.1.0"
+robolectric= "4.11.1"
+mockk= "1.13.9"
 
 [libraries]
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
@@ -80,6 +82,12 @@ room-compiler = { module = "androidx.room:room-compiler", version.ref="room" }
 
 # Preferences
 prefs = {module = "androidx.datastore:datastore-preferences", version.ref = "prefs" }
+
+# Robolectric
+robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
+
+# mockk
+mockk = { group = "io.mockk", name = "mockk", version.ref = "mockk" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
